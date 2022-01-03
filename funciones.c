@@ -10,8 +10,8 @@ int total_polinomios=0;
  * @brief: Esta función pide al usuario que de el polinomio que desea agregar a la memoria, lo ordena por método BURBUJA y lo escribe en un archivo
  * @param: Recibe un polinomio
  * @return: Los polinomios creados en escritos en un archivo
- * @fecha:
- * @programador:
+ * @fecha:28/12/2022
+ * @programador: Moreno Santoyo Mariana
  **/
 
 polinomios * crear_polinomio()
@@ -44,7 +44,7 @@ polinomios * crear_polinomio()
             for(i=0; i<tot_p; i++)
             {
                 // Pido los polinomios 
-                //Pido la cantidad de coheficientes que se desea y la estructura de cada término
+                //Pido la cantidad de coeficientes que se desea y la estructura de cada término
                 printf("Introduzca la cantidad de coeficientes para el polinomio %d: ",(i+1));
                 scanf("%d",&tot_term);
                 system("cls");
@@ -141,8 +141,8 @@ polinomios * crear_polinomio()
  * @brief: Lee los polinomios de el archivo
  * @param: No recibe nada 
  * @return: Muestra en pantalla los polinomios que se encuentran en el archivo
- * @fecha:
- * @programador:
+ * @fecha:16/12/2021
+ * @programador: Moreno Santoyo Mariana 
  **/
 
 polinomios * obtener_polinomios(){
@@ -272,8 +272,8 @@ polinomios * obtener_polinomios(){
  * @brief: Imprime los polinomios 
  * @param: Apuntador de tipo polinomio  
  * @return: Muestra en pantalla los polinomios
- * @fecha:
- * @programador:
+ * @fecha:2/1/2024
+ * @programador: Moreno Santoyo Mariana
  **/
 
 void imprime_polinomios(polinomios *pol){
@@ -303,8 +303,8 @@ void imprime_polinomios(polinomios *pol){
  * @brief: Sumar dos polinomios 
  * @param: Los dos polinomios a sumar
  * @return: El polinomio resultante 
- * @fecha:
- * @programador:
+ * @fecha: 2/1/2022
+ * @programador: Flores Melquiades Evelyn 
  **/
 
 //aoa30
@@ -313,8 +313,8 @@ void suma(polinomios *pol)
 {
     /**
      * En el caso de esta función las banderas se usan como un switch
-     * Cuando la bandera es igual a cero es que los exponentes son diferentes y no suma los coheficientes
-     * Caso contrario, la bandera es verdadera, los exponentes son iguales y los coheficientes se suman
+     * Cuando la bandera es igual a cero es que los exponentes son diferentes y no suma los coeficientes
+     * Caso contrario, la bandera es verdadera, los exponentes son iguales y los coeficientes se suman
      **/
     
     int i,j,k,band, pol1, pol2;
@@ -345,7 +345,7 @@ void suma(polinomios *pol)
             if(pol[pol1].term[i].exp==pol[pol2].term[j].exp)
             {
                 band = 1;
-                // La bandera es verdadera cuando los exponentes de los coheficientes son los mismos 
+                // La bandera es verdadera cuando los exponentes de los coeficientes son los mismos 
             }
         }
     }
@@ -396,8 +396,8 @@ void suma(polinomios *pol)
  * @brief: Restar dos polinomios 
  * @param: Los dos polinomios a restar
  * @return: El polinomio resultante 
- * @fecha:
- * @programador:
+ * @fecha: 2/1/2022
+ * @programador: Barcenas Torres David Farid 
  **/
 
 void resta(polinomios *pol)
@@ -479,8 +479,8 @@ void resta(polinomios *pol)
  * @brief: Multplicar un polinomio por un escalar 
  * @param: Un polinomio y un escalar 
  * @return: El polinomio resultante 
- * @fecha:
- * @programador:
+ * @fecha: 19/12/2021
+ * @programador: Haro Estrada Leonardo Damian
  **/
 
 void multiplicacion_escalar(polinomios *pol) 
@@ -513,8 +513,8 @@ void multiplicacion_escalar(polinomios *pol)
  * @brief: Multplicar un polinomio por otro
  * @param:Dos polinomios a multiplicar 
  * @return: El polinomio resultante 
- * @fecha:
- * @programador:
+ * @fecha:30/24/2021
+ * @programador: Barcenas Torres David Farid
  **/
 
 void multiplicacion(polinomios *pol) {
@@ -557,8 +557,8 @@ void multiplicacion(polinomios *pol) {
  * @brief: Dividir dos polinomios 
  * @param:Dos polinomios a dividir 
  * @return: El polinomio resultante 
- * @fecha:
- * @programador:
+ * @fecha: 16/24/2021
+ * @programador: Moreno Santoyo Mariana 
  **/
 
 void division(polinomios *pol){
